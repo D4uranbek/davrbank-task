@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/chat_db?createDatabaseIfNotExist=true
+    username: postgres
+    password: 1111
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    database: postgresql
+  banner:
+    image:
+      location: classpath:banner.txt
+  jooq:
+    sql-dialect: Postgres
+
+server:
+  port: 9000
